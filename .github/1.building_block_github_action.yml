@@ -1,0 +1,23 @@
+name: 01 github action block
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  echo-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello world
+        run: echo "Hello world!"
+  echo-goodbyy: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: failed step
+        run: |
+          echo "code is failed"
+      - name: Say goodbye world
+        run: echo "Goodbye world!"
