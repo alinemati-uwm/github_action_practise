@@ -1,0 +1,13 @@
+
+name: 2.work flows events.yml
+
+on: push
+
+jobs: 
+    echo:
+        runs-on: ubuntu-latest
+        steps:
+            - name: show the trigger 
+              run: echo "i have been triggered by a push event a(n)"${{ github.event_name }}"."
+
+

@@ -19,6 +19,6 @@ jobs:
       - name: failed step
         run: |
           echo "code is failed"
-          exit 1
+          exit 0
       - name: Say goodbye world
         run: echo "Goodbye world!"
